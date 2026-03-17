@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "funcexpr"
-version = "0.1.0"
+version = "0.1.2"
 description = "A lightweight wrapper around numexpr that adds support for registered callables and automatic type normalization"
 readme = "README.md"
 license = { text = "MIT" }

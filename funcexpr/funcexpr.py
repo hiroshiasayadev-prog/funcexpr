@@ -1,5 +1,5 @@
 import ast
-from typing import Callable, Any
+from typing import Callable, Any, Mapping
 import operator
 
 import numpy as np
@@ -244,8 +244,8 @@ def _substitute_calls(
 
 def evaluate(
     expr: str,
-    ctx: dict[str, CtxValue],
-    funcs: dict[str, Callable] | None = None,
+    ctx: Mapping[str, CtxValue],
+    funcs: Mapping[str, Callable] | None = None,
 ) -> np.ndarray:
     """Evaluate a Python expression string using numexpr, with support for
     registered callables and automatic type normalization.
