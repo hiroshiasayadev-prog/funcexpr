@@ -5,10 +5,7 @@ import operator
 import numpy as np
 import numexpr as ne
 
-
-# Type alias for values accepted in ctx and returned by Callable.
-Scalar = int | float | complex | np.generic
-CtxValue = np.ndarray | Scalar
+from ._typing import CtxValue
 
 # Mapping from AST binary operator node type to the corresponding callable.
 # Used in _eval_node to evaluate BinOp nodes without rebuilding the dict on

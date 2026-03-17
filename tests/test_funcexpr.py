@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 from unittest.mock import MagicMock
-from funcexpr import evaluate, _normalize
+from funcexpr.funcexpr import evaluate, _normalize
 
 
 class TestNormalize(unittest.TestCase):
